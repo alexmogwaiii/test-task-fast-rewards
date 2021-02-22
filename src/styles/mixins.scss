@@ -1,3 +1,9 @@
+@mixin onLaptop {
+  @media (max-width: 1440px) {
+    @content;
+  }
+}
+
 @mixin onTablet {
   @media (max-width: 1024px) {
     @content;

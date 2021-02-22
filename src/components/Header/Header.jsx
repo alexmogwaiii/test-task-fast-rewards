@@ -1,12 +1,12 @@
 import React from "react";
-import logo from './../../img/logo.svg'
+import logoLg from './../../img/logo.svg'
 
 import './header.scss';
 
 export const Header = () => (
   <header className="header">
     <div className="header__container">
-      <img src={logo} alt="logo" className="header__logo"/>
+      <img src={logoLg} alt="logo" className="header__logo"/>
       <h1 className="header__title">
         Everybody Gets
         <div className="header__next-line">

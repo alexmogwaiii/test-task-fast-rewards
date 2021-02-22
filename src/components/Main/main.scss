@@ -1,0 +1,81 @@
+@import "../../styles/mixins";
+
+.main {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 104px;
+
+    @include onLaptop {
+      margin: 0 48px;
+    }
+
+    @include onMobile {
+      margin: 0 auto;
+    }
+  }
+
+  &__title {
+    margin-top: 195px;
+    font-size: 34px;
+    font-weight: 700;
+
+    @include onTablet {
+      font-size: 20px;
+      margin-top: 95px;
+    }
+
+    @include onMobile {
+      margin-top: 82px;
+    }
+  }
+
+  &__list {
+    width: 100%;
+    margin: 20px 0 186px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+
+    @include onTablet {
+      margin: 32px 0 95px;
+    }
+
+    @include onMobile {
+      margin: 16px 0 82px;
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: 1fr;
+      row-gap: 24px;
+    }
+  }
+
+  &__list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__number {
+    color: #276AFD;
+    font-size: 60px;
+    font-weight: 700;
+
+    @include onTablet {
+      font-size: 26px;
+    }
+  }
+
+  &__text {
+    display: block;
+    margin-top: 21px;
+    font-weight: 700;
+    font-size: 20px;
+
+    @include onTablet {
+      margin-top: 8px;
+      font-size: 14px;
+    }
+  }
+}
